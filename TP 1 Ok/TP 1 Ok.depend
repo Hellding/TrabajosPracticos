@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1504133620 source:c:\users\swordhell\desktop\programacion\nuevo cuatrimestre\programacion i\tp 1 ok\main.c
+	<stdio.h>
+	<stdlib.h>
+	"biblioteca.h"
+
+1504135964 c:\users\swordhell\desktop\programacion\nuevo cuatrimestre\programacion i\tp 1 ok\biblioteca.h
+	<stdio.h>
+	<stdlib.h>
+
+1504134740 source:c:\users\swordhell\desktop\programacion\nuevo cuatrimestre\programacion i\tp 1 ok\funciona.c
+	<stdio.h>
+	<stdlib.h>
+	"biblioteca.h"
+
