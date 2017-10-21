@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1508614939 source:c:\users\swordhell\desktop\programacion\nuevo cuatrimestre\programacion i y laboratorio i\trabajos practicos\tp 03 ok\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1508511777 source:c:\users\alumno\desktop\programacion i y laboratorio i\trabajos practicos\tp 03 ok\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1508607788 c:\users\swordhell\desktop\programacion\nuevo cuatrimestre\programacion i y laboratorio i\trabajos practicos\tp 03 ok\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1508614368 source:c:\users\swordhell\desktop\programacion\nuevo cuatrimestre\programacion i y laboratorio i\trabajos practicos\tp 03 ok\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
