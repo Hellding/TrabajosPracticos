@@ -2,23 +2,25 @@
 #include <stdlib.h>
 #include <string.h>
 #include "funciones.h"
-#define TAM 10
 
 int main()
 {
-    eMovie pelis[TAM], *Peliculas;
+    eMovie *Peliculas=NULL;
     char seguir='s';
-    char archi[50];
-    int nro;
-    int flag=0;
+    char archi[]= {"CineVAM"};
     int opcion=0;
     int contpelis=0;
+    int nro,auxint;
+    int flag=0;
 
-    Peliculas = pelis;
+    auxint=TomarPeliArchivada(&Peliculas, &contpelis);
+    if(auxint==-1)
+    {
+        exit(0);
+    }
 
     while(seguir=='s')
     {
-        contpelis=PermitirOpciones(Peliculas, TAM);
 
         system("cls");
         printf("La cantidad de Peliculas Ingresadas son: %d\n",contpelis);
@@ -41,13 +43,13 @@ int main()
             {
             case 1:
                 system("cls");
-                AltaPeli(Peliculas, TAM);
+                contpelis=AltaPeli(Peliculas, contpelis);
                 break;
             case 2:
                 system("cls");
-                if((PermitirOpciones(Peliculas, TAM))!=0)
+                if((PermitirOpciones(Peliculas, contpelis))>0)
                 {
-                    BorrarPeli(Peliculas, TAM);
+                    contpelis=BorrarPeli(Peliculas, contpelis);
                 }
                 else
                 {
@@ -57,9 +59,9 @@ int main()
                 break;
             case 3:
                 system("cls");
-                if((PermitirOpciones(Peliculas, TAM))!=0)
+                if((PermitirOpciones(Peliculas, contpelis))>0)
                 {
-                    ModificarPeli(Peliculas, TAM);
+                    ModificarPeli(Peliculas, contpelis);
                 }
                 else
                 {
@@ -69,7 +71,7 @@ int main()
                 break;
             case 4:
                 system("cls");
-                if((PermitirOpciones(Peliculas, TAM))!=0)
+                if((PermitirOpciones(Peliculas, contpelis))>0)
                 {
                     printf("Ingrese el nombre de archivo a crear,Rango[2-50]:\n");
                     fflush(stdin);
@@ -103,8 +105,6 @@ int main()
                 break;
             }
         }
-
-
     }
 
     return 0;
